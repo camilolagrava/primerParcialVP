@@ -30,7 +30,7 @@ public class CorrectUser9_3Test {
         perMock.when(() -> UserPermisosStatic.permisos(u, pss)).thenReturn(m);
         verMock.when(() -> UserVerifyStatic.verify(u, pss)).thenReturn(b);
 
-        CorrectUser9_2 correct = new CorrectUser9_2();
+        CorrectUser9_3 correct = new CorrectUser9_3();
         String actualResult = correct.verify(u,pss);
         Assertions.assertEquals(expectedResult,actualResult,"Error, un errooooor!");
 
